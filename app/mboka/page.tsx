@@ -9,7 +9,7 @@ import {
   Button
 } from "../../components/ui";
 
-import { MapPin, AlertCircle, BusFront, Car, UserCheck } from "lucide-react";
+import { MapPin, AlertCircle, Bus, Car, UserCheck } from "lucide-react";
 
 export default function MbokaTrafficUI() {
   return (
@@ -42,7 +42,7 @@ export default function MbokaTrafficUI() {
                   <AlertCircle className="mr-2 h-4 w-4" /> Signaler un enlèvement
                 </Button>
                 <Button className="w-full" variant="outline">
-                  <BusFront className="mr-2 h-4 w-4" /> Je prends le bus
+                  <Bus className="mr-2 h-4 w-4" /> Je prends le bus
                 </Button>
               </div>
             </TabsContent>
