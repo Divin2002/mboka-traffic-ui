@@ -24,6 +24,7 @@ export default function RegisterPage() {
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
+    localStorage.setItem("vehicule", form.vehicule.toString());
     alert(JSON.stringify(form, null, 2));
     // ➤ ICI : appel Firebase Auth + Firestore ou API custom
   };

@@ -14,10 +14,9 @@ export default function LoginPage() {
   const handleSubmit = (e: any) => {
     e.preventDefault();
     // ➤ À remplacer plus tard par une vraie vérification Firebase/Auth
-    if (form.phone && form.password) {
-      alert("Connexion réussie");
-      router.push("/"); // On redirigera par rôle dans l’étape suivante
-    } else {
+    if (form.phone && form.password) {localStorage.setItem("vehicule", "true"); // ← à remplacer par la vraie valeur plus tard
+  const isChauffeur = localStorage.getItem("vehicule") === "true";
+  router.push(isChauffeur ? "/chauffeur" : "/usager");} else {
       alert("Échec de connexion");
     }
   };
